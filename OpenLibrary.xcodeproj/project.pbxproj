@@ -13,6 +13,7 @@
 		4960EB691CDAAA2E00F89508 /* OpenLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4960EB671CDAAA2E00F89508 /* OpenLibrary.xcdatamodeld */; };
 		4960EB6B1CDAAA2E00F89508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4960EB6A1CDAAA2E00F89508 /* Assets.xcassets */; };
 		4960EB6E1CDAAA2E00F89508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4960EB6C1CDAAA2E00F89508 /* LaunchScreen.storyboard */; };
+		4960EB761CDAB28000F89508 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4960EB751CDAB28000F89508 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,7 @@
 		4960EB681CDAAA2E00F89508 /* OpenLibrary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenLibrary.xcdatamodel; sourceTree = "<group>"; };
 		4960EB6A1CDAAA2E00F89508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4960EB6D1CDAAA2E00F89508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4960EB6F1CDAAA2E00F89508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4960EB751CDAB28000F89508 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +61,8 @@
 				4960EB621CDAAA2E00F89508 /* ViewController.swift */,
 				4960EB641CDAAA2E00F89508 /* Main.storyboard */,
 				4960EB6A1CDAAA2E00F89508 /* Assets.xcassets */,
+				4960EB751CDAB28000F89508 /* Info.plist */,
 				4960EB6C1CDAAA2E00F89508 /* LaunchScreen.storyboard */,
-				4960EB6F1CDAAA2E00F89508 /* Info.plist */,
 				4960EB671CDAAA2E00F89508 /* OpenLibrary.xcdatamodeld */,
 			);
 			path = OpenLibrary;
@@ -126,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4960EB761CDAB28000F89508 /* Info.plist in Resources */,
 				4960EB6E1CDAAA2E00F89508 /* LaunchScreen.storyboard in Resources */,
 				4960EB6B1CDAAA2E00F89508 /* Assets.xcassets in Resources */,
 				4960EB661CDAAA2E00F89508 /* Main.storyboard in Resources */,
