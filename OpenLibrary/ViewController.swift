@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var imgPortada: UIImageView!
     @IBOutlet weak var Busqueda: UITextField!
     @IBOutlet weak var titulo: UILabel!
     @IBOutlet weak var Autor: UILabel!
@@ -39,9 +40,18 @@ class ViewController: UIViewController {
                        // print(item["name"] as! NSString as String)
                         
                         self.Autor.text = self.Autor.text! + (item["name"] as! NSString as String)
+                        /////////
+                        
+                        if let imagen = libro["cover"] as? NSDictionary{
+                            dispatch_async(dispatch_get_main_queue(), {
+                                let url = NSURL(string: imagen["large"] as! String)
+                                let data = NSData(contentsOfURL: url!)
+                                self.imgPortada.image = UIImage(data: data!)
+                            })
+                        }
                         
                     }
-                    self.Portada.text = "La portada no esta disponible"
+                    //self.Portada.text = "La portada no esta disponible"
                 }else{
                     let alertController = UIAlertController(title: "OpenLibrary Request", message:
                         "Nn se han encontrado resultados", preferredStyle: UIAlertControllerStyle.Alert)
@@ -52,7 +62,7 @@ class ViewController: UIViewController {
                 }
                 
                 
-                
+    
                 
             }catch _{
             }
@@ -72,6 +82,7 @@ class ViewController: UIViewController {
         self.titulo.text = ""
         self.Autor.text = ""
         self.Portada.text = ""
+     
     }
     override func viewDidLoad() {
         super.viewDidLoad()
